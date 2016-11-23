@@ -1,0 +1,506 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+@font-face {
+   font-family: 'pacifico';
+   src: url(../font/Pacifico.eot);
+   src: local('pacifico'), url('../font/Pacifico.ttf') format('truetype');
+}
+
+a:hover {
+text-decoration:none }
+
+.header {
+	height: 100px;
+	width: auto;
+}
+
+.logo {
+	text-align:center;
+	padding-top:50px
+	}
+
+.logoimage{
+	height: 100px;
+	width: auto;
+}
+
+.bg-green {
+	background: #00b17a url('../img/raggi@2x.png');
+	background-size: 369px 211px;
+	background-repeat: no-repeat;
+	background-position: center 0;
+	height:230px;
+}
+
+.text-1-header {
+	color:white;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 60px;
+}
+.pacifico {
+	font-family: pacifico;
+}
+.text-2-header {
+	text-align:center;
+	width:100%; 
+	height:auto; 
+	padding-top: 45px
+}
+
+.header-button, .code-button-txt {
+	color:white; 
+	border:2px solid white; 
+	width:136px; 
+	height:37px; 
+	text-align:center; 
+	padding:10px;
+	font-size:11px;
+}
+
+
+.icona1, .icona2, .icona3{
+width:auto;
+height: 135px;
+}
+
+.pacifico-green {
+	color:#00b17a;
+	font-family: pacifico;
+	font-size: 19px;
+	padding-top:15px;
+	line-height:45px
+}
+
+.pad-b{
+	padding-bottom:25px;
+	padding: 0 15px 25px 15px;
+	line-height:20px
+}
+.text-1-body {
+	font-size: 12px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.text-2-body {
+	font-size: 12px;
+	text-align: center;
+	color: #303030;
+
+}
+
+.text-3-body {
+	font-size: 12px;
+	text-align: center;
+	padding-top: 30px
+	color: #303030;
+
+}
+
+.text-4-body {
+	font-size: 12px;
+	text-align: center;
+	padding-top: 30px
+	color: #303030;
+
+}
+
+.bg-triangle {
+	background: url('../img/background@2x.png');
+	background-size: 100% 71px;
+	height:71px;
+}
+
+
+.bg-green-2 {
+	background: #00b17a;
+	height:100%;
+}
+
+
+.text-1-code {
+	color:white;
+	font-size: 14px;
+	text-align: center;
+}
+
+.bg-code {
+ background-color: #f9f2f4;
+ padding:10px;
+ min-height:207px
+ }
+
+.title-code {
+	color:#94D1B5;
+	text-align:center;
+	font-size: 13px;
+	height:40px;
+	font-family: Consolas,Monaco,"Andale Mono",monospace;
+	}
+
+.code {
+	color:#303030;
+	font-size: 9px;
+	font-family: Consolas,Monaco,"Andale Mono",monospace;
+
+}
+
+.pd-l {
+	padding-left: 3px;
+	padding-top: 36%
+}
+
+.pd-r {
+	padding-left: 3px;
+	padding-top: 36%
+}
+
+
+.arrow1 {
+	height: 40px;
+	width: auto;
+}
+
+.arrow2 {
+	height: 40px;
+	width: auto;
+}
+
+.arrow1b {
+	height: 40px;
+    width: auto;
+    margin-top: 71px;
+	}
+.arrow2b {
+	height: 40px;
+    width: auto;
+    margin-top: 71px;
+	}
+
+
+#box2, #box3, #box4 {
+display:none;
+}
+
+
+.violet {
+color:#8959a8;
+}
+
+.green {
+color:#718c00;
+}
+
+.blu {
+color:#4271ae;
+}
+
+.gray {
+color: #8e908c;
+}
+
+.bullets ul {
+	text-align:center;
+	padding-left:0;
+	padding-top:11px
+}
+
+.bullets ul li{
+	display: inline;
+	letter-spacing:8px
+}
+
+.bullet-on {
+	background-image: url('../img/pallino_slider_verde@2x.png');
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+}
+
+.bullet-off {
+	background-image: url('../img/pallino_slider_bianco@2x.png');
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+}
+
+.code-button {
+	text-align:center;
+	width:100%; 
+	height:auto; 
+	padding-top: 12px;
+	padding-bottom: 23px;
+	}
+
+.chatbot {
+background-color:#f4f4f4;
+height:100%
+}
+
+.text-1-chatbox {
+	color:#00B17A;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 25px;
+}
+
+
+.bg-triangle-2 {
+	background: #f4f4f4 url('../img/background@2x.png');
+	background-size: 100% 71px;
+	background-repeat: no-repeat;
+	height:71px
+}
+
+.logo-vdm {
+	height: 55px;
+	width: auto;
+	padding-top:27px;
+}
+
+.vdm {
+	text-align:right
+}
+
+.logo-brainy {
+	height: 58px;
+	width: auto;
+	padding-top:27px
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	.header{
+		height:135px
+		}
+	
+	.logoimage{
+		height: 170px;
+	}
+	.text-1-header {
+		padding-top:120px;
+		font-size: 25px
+		}
+	.text-2-header {
+		padding-top:62px;
+	}
+	.header-button {
+		font-size:15px;
+	}
+	.text-1-body {
+		font-size: 19px;
+	}
+	.text-2-body, .text-3-body, .text-4-body  {
+    font-size: 16px;
+	}
+	.pacifico-green {
+		font-size:28px;
+		line-height:59px
+	}
+	.pad-b{
+	padding-bottom:25px;
+	padding: 0 15px 33px 15px;
+	line-height:26px
+	}
+	.bg-triangle {
+	background-size: 100% 140px;
+	height:139px;
+	}
+	.bg-triangle-2 {
+	background-size: 100% 140px;
+	height:139px;
+	}
+	.title-code {
+    font-size: 18px;
+	}
+	.text-1-code {
+    font-size: 17px;
+	}
+	.code {
+	font-size:14px;
+	}
+	.pd-r {
+	padding-left: 3px;
+	padding-top: 21%;
+	text-align:right
+	}
+	.bg-green {
+	height:385px;
+	background-size: 768px 385px;
+	}
+	.code-button-txt {
+		font-size:15px;
+	}
+	.logo-brainy {
+	height:75px
+	}
+	.brainy{
+	padding-top: 35px;
+	}
+	.logo-vdm {
+	height:75px
+	}
+	.vdm {
+	padding-top: 35px;
+	}
+
+}
+/* Medium devices (smartphone-horizontal, 666px and up) */
+@media (min-width: 666px) { 
+	.code {
+	font-size:14px;
+	}
+	.pad-b {
+    padding: 0 70px 25px 70px;
+	}
+	.pd-l {
+    padding-left: 12px;
+	padding-top: 21%;
+	}
+	.pd-r {
+	padding-left: 3px;
+	text-align:right;
+	padding-top: 21%;
+	}
+
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.logoimage{
+		height: 240px;
+	}
+	.header {
+		height:154px;
+		}
+	.bg-green {
+		height:485px;
+		background-size: 1205px 485px;
+		}
+	.text-1-header {
+		padding-top:166px;
+		font-size: 32px
+		}
+	.text-2-header {
+		padding-top:75px;
+	}
+	.header-button {
+		font-size:20px;
+	}
+	.text-1-body {
+		font-size: 25px;
+		padding-top: 76px;
+		padding-bottom: 84px;
+	}
+	.text-2-body, .text-3-body, .text-4-body  {
+    font-size: 16px;
+	}
+	.pad-b{
+	padding-bottom:25px;
+	padding: 0 15px 33px 15px;
+	line-height:26px
+	}
+	.icona1, .icona2, .icona3{
+		height:181px;
+	}
+	.pacifico-green {
+		font-size:28px;
+		line-height:59px
+	}
+	.text-1-code {
+		padding-top: 39px;
+		font-size: 23px
+		}
+	.title-code {
+		padding-top:42px;
+		font-size:24px;
+		margin-bottom:45px
+		}
+	.bg-green-2 {
+		height:100%;
+		}
+	.code-button-txt {
+		font-size:20px;
+	}
+	.pd-l {
+    padding-left: 10px;
+	padding-top: 19%;
+	}
+	.pd-r {
+	padding-left: 3px;
+	padding-top: 19%;
+	text-align:right
+	}
+
+	.bg-code {
+	min-height:164px;
+	}
+	.code {
+	font-size:17px
+	}
+	.code-button {
+	padding-top:35px;
+	padding-bottom: 41px;	
+	}
+	.bullet-on {
+	background-size: 15px 15px;
+	}
+	.bullet-off {
+	background-size: 15px 15px;
+	}
+	.bullets ul li{
+	letter-spacing:13px
+	}
+	.text-1-chatbox {
+	font-size:24px;
+	padding-top:69px
+	}
+	.bg-triangle {
+	background-size: 100% 140px;
+	height:140px
+	}
+	.bg-triangle-2 {
+	background-size: 100% 140px;
+	height:140px
+	}
+	.logo-brainy {
+	height:75px
+	}
+	.brainy{
+	padding-top: 43px;
+	}
+	.logo-vdm {
+	height:75px
+	}
+	.vdm {
+	padding-top: 43px;
+	}
+	.arrow1b {
+	height: 40px;
+    width: auto;
+    margin-top: 51px;
+	}
+	.arrow2b {
+	height: 40px;
+    width: auto;
+    margin-top: 51px;
+	}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width:1200px) { 
+
+	.arrow1b {
+	height: 40px;
+    width: auto;
+    margin-top: 51px;
+	}
+	.arrow2b {
+	height: 40px;
+    width: auto;
+    margin-top: 51px;
+	}
+
+	
+}

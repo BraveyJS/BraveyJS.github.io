@@ -1,1 +1,226 @@
-I'm coming!
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>Bravey</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="bravey-sample/chatterbox.css" rel="stylesheet" type="text/css"/>
+    <script src="bravey-sample/chatterbox.js" type="text/javascript"></script>
+    <script src="bravey-sample/libs/bravey.min.js" type="text/javascript"></script>
+    <link href="bravey-sample/run-demo.css" rel="stylesheet" type="text/css"/>
+    <script src="bravey-sample/run-demo.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    function toBox1() {
+        document.getElementById('box1').style.display = 'block';
+        document.getElementById('box2').style.display = 'none';
+    }
+    function toBox2() {
+        document.getElementById('box2').style.display = 'block';
+        document.getElementById('box1').style.display = 'none';
+        document.getElementById('box3').style.display = 'none';
+    }
+    function toBox3() {
+        document.getElementById('box3').style.display = 'block';
+        document.getElementById('box2').style.display = 'none';
+        document.getElementById('box4').style.display = 'none';
+    }
+    function toBox4() {
+        document.getElementById('box4').style.display = 'block';
+        document.getElementById('box3').style.display = 'none';
+    }
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-766294-18', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+<body onload="_rundemo()">
+    <div class="header">
+        <div class="logo">
+            <img alt="Bravey Logo" src="img/logo_bravey@2x.png" class="logoimage" />
+        </div>
+    </div>
+    <div class="bg-green">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-1-header">
+                    <p>A SIMPLE JAVASCRIPT NLP-LIKE LIBRARY</p>
+                    <p class="pacifico">to help you create your own bot</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-2-header"><a href="https://github.com/BraveyJS/bravey"><span class="header-button">VIEW ON GITHUB</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-1-body">
+                <p>AS GOOD FRIENDS, WE DEVELOPED
+                    <br/>THIS SIMPLE JAVASCRIPT NLP-LIKE LIBRARY, WHICH IS:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 text-2-body col-md-4"><img alt="Free Icon" src="img/icona1@2x.png" class="icona1" />
+                <p class="pad-b"><span class="pacifico-green">Free and easy to use:</span>
+                    <br/>Starting off from a programming language you already know, you'll be able to understand what NLP is and its possibilities. View the full documentation, read the short technical summary of the features of Bravey, then check out how easy it is to get started, following the set of immediate working examples attached. All done? Now it's time to create your own chatbot!
+                </p>
+            </div>
+            <div class="col-xs-12 text-3-body col-md-4"><img alt="New Icon" src="img/icona2@2x.png" class="icona2" />
+                <p class="pad-b"><span class="pacifico-green">New,  just launched:</span>
+                    <br/>You can learn something from everyone you meet. Start sharing your knowledge; you'll see this technology develop and improve! Check out the full documentation for some useful examples, unit tests and other relevant material, which should be useful as support and to help our technology to grow proactively. Ready? We'll love to have you onboard!
+                </p>
+            </div>
+            <div class="col-xs-12 text-4-body col-md-4"><img alt="Versatile Icon" src="img/icona3@2x.png" class="icona3" />
+                <p class="pad-b"><span class="pacifico-green">Versatile and flexible:</span>
+                    <br/>Shape your bot by making it learn from you and your interests. Bravey comes within a set of default entity recognizers embedded in its code, but, as usual with NLP technology, the more you add and customize them, the smarter it becomes. It supports multiple language processors, which can be used alternately in the same chatbot. Come on! Join the bandwagon of conversation interfaces!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-triangle">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-green-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-1-code">
+                    <p>HAVE A LOOK AT THESE EXAMPLES, TO UNDERSTAND HOW TO GET STARTED:</p>
+                </div>
+            </div>
+            <div id="box1" class="row">
+                <div class="col-xs-12 title-code">You can basically use BRAVE from a single object.</div>
+                <div class="col-xs-1 pd-l"><img alt="Disabled arrow" src="img/freccia_back_disabilitata@2x.png" class="arrow1" /></div>
+                <div class="col-xs-10 bg-code">
+                    <code>
+			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> BRAVE.<span class="blu">Nlp.Fuzzy</span>();<br/>
+nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"I want a pizza!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pizza"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
+nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"I want some pasta!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pasta"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
+console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Want pizza, please"</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;).intent<br/>);<br/>
+  <span class="gray">// "pizza"</span></span>
+  </code>
+                </div>
+                <div class="col-xs-1 pd-r" onclick="toBox2()"><img alt="Next arrow" src="img/freccia_next@2x.png" class="arrow2" /></div>
+                <div class="col-xs-12 bullets">
+                    <ul>
+                        <li class="bullet-on">&nbsp;</li>
+                        <li class="bullet-off">&nbsp;</li>
+                        <li class="bullet-off">&nbsp;</li>
+                        <li class="bullet-off">&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="box2" class="row">
+                <div class="col-xs-12 title-code">You can extract some features from a sentence:</div>
+                <div class="col-xs-1 pd-l" onclick="toBox1()"><img alt="Previous arrow" src="img/freccia_back@2x.png" class="arrow1" /></div>
+                <div class="col-xs-10 bg-code">
+                    <code>
+			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> BRAVE.<span class="blu">Nlp.Fuzzy</span>();<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.NumberEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"quantity"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"I want 2 pizzas!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pizza"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
+console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Want 3 pizzas, please"</span><br/>&nbsp;&nbsp;).entitiesIndex.quantity.value<br/>);<br/>
+  <span class="gray">// 3</span></span>
+  </code>
+                </div>
+                <div class="col-xs-1 pd-r" onclick="toBox3()"><img alt="Next arrow" src="img/freccia_next@2x.png" class="arrow2" /></div>
+                <div class="col-xs-12 bullets">
+                    <ul>
+                        <li class="bullet-off">&nbsp;</li>
+                        <li class="bullet-on">&nbsp;</li>
+                        <li class="bullet-off">&nbsp;</li>
+                        <li class="bullet-off">&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="box3" class="row">
+                <div class="col-xs-12 title-code">And some of them have language support too, like in english...</div>
+                <div class="col-xs-1 pd-l" onclick="toBox2()"><img alt="Previous arrow" src="img/freccia_back@2x.png" class="arrow1b" /></div>
+                <div class="col-xs-10 bg-code">
+                    <code>
+			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> BRAVE.<span class="blu">Nlp.Fuzzy</span>();<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.NumberEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"quantity"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.Language.EN.TimeEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"delivery_time"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"I want 2 pizzas at 12!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pizza"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
+console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Deliver 3 pizzas for 2pm, please"</span><br/>&nbsp;&nbsp;).entitiesIndex<br/>);<br/>
+  <span class="gray">// {delivery_time:{value:"14:00:00"},quantity:{value:3}}</span></span>
+  </code>
+                </div>
+                <div class="col-xs-1 pd-r" onclick="toBox4()"><img alt="Next arrow" src="img/freccia_next@2x.png" class="arrow2b" /></div>
+                <div class="col-xs-12 bullets">
+                    <ul>
+                        <li class="bullet-off">&nbsp;</li>
+                        <li class="bullet-off">&nbsp;</li>
+                        <li class="bullet-on">&nbsp;</li>
+                        <li class="bullet-off">&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="box4" class="row">
+                <div class="col-xs-12 title-code">... or italian.</div>
+                <div class="col-xs-1 pd-l" onclick="toBox3()"><img alt="Previous arrow" src="img/freccia_back@2x.png" class="arrow1b" /></div>
+                <div class="col-xs-10 bg-code">
+                    <code>
+			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> BRAVE.<span class="blu">Nlp.Fuzzy</span>();<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.NumberEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"quantity"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.Language.IT.TimeEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"delivery_time"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"Vorrei 2 pizze per le 3!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pizza"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
+console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Consegnami 3 pizze per le 2 del pomeriggio!, please"</span><br/>&nbsp;&nbsp;).entitiesIndex<br/>);<br/>
+  <span class="gray">// {delivery_time:{value:"14:00:00"},quantity:{value:3}}</span></span>
+  </code>
+                </div>
+                <div class="col-xs-1 pd-r"><img alt="Next disabled arrow" src="img/freccia_next_disabilitata@2x.png" class="arrow2b" /></div>
+                <div class="col-xs-12 bullets">
+                    <ul>
+                        <li class="bullet-off">&nbsp;</li>
+                        <li class="bullet-off">&nbsp;</li>
+                        <li class="bullet-off">&nbsp;</li>
+                        <li class="bullet-on">&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 code-button"><a href="doc/"><span class="code-button-txt">READ THE DOCS</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chatbot">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-1-chatbox">
+                    <p>TRY THIS CHATBOT, BUILT WITH BRAVEY TECHNOLOGY:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="embed-container">
+        <div id="embed-here"></div>
+    </div>
+    <div class="bg-triangle-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 brainy">
+                    <a href="https://www.vidiemme.com/en/brainy/" target="_blank"><img alt="Brainy logo" src="img/logo_brainy.png" class="logo-brainy" /></a>
+                </div>
+                <div class="col-xs-4"></div>
+                <div class="col-xs-6 vdm">
+                    <a href="https://www.vidiemme.com/en/" target="_blank"><img alt="Vidiemme logo" src="img/logo_vidiemme@2x.png" class="logo-vdm" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

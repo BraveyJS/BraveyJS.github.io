@@ -161,21 +161,25 @@ height: 135px;
 
 
 .arrow1 {
+	cursor: pointer;
 	height: 40px;
 	width: auto;
 }
 
 .arrow2 {
+	cursor: pointer;
 	height: 40px;
 	width: auto;
 }
 
 .arrow1b {
+	cursor: pointer;
 	height: 40px;
     width: auto;
     margin-top: 71px;
 	}
 .arrow2b {
+	cursor: pointer;
 	height: 40px;
     width: auto;
     margin-top: 71px;
@@ -478,11 +482,13 @@ height:100%
 	padding-top: 43px;
 	}
 	.arrow1b {
+	cursor: pointer;
 	height: 40px;
     width: auto;
     margin-top: 51px;
 	}
 	.arrow2b {
+	cursor: pointer;
 	height: 40px;
     width: auto;
     margin-top: 51px;
@@ -495,11 +501,13 @@ height:100%
 	height: 40px;
     width: auto;
     margin-top: 51px;
+    cursor: pointer;
 	}
 	.arrow2b {
 	height: 40px;
     width: auto;
     margin-top: 51px;
+    cursor: pointer;
 	}
 
 	

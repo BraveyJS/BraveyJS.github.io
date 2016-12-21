@@ -108,11 +108,11 @@
                 </div>
             </div>
             <div id="box1" class="row">
-                <div class="col-xs-12 title-code">You can basically use BRAVE from a single object.</div>
+                <div class="col-xs-12 title-code">You can basically use Bravey from a single object.</div>
                 <div class="col-xs-1 pd-l"><img alt="Disabled arrow" src="img/freccia_back_disabilitata@2x.png" class="arrow1" /></div>
                 <div class="col-xs-10 bg-code">
                     <code>
-			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> BRAVE.<span class="blu">Nlp.Fuzzy</span>();<br/>
+			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> Bravey.<span class="blu">Nlp.Fuzzy</span>();<br/>
 nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"I want a pizza!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pizza"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
 nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"I want some pasta!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pasta"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
 console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Want pizza, please"</span><br/>&nbsp;&nbsp;&nbsp;&nbsp;).intent<br/>);<br/>
@@ -134,8 +134,8 @@ console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="
                 <div class="col-xs-1 pd-l" onclick="toBox1()"><img alt="Previous arrow" src="img/freccia_back@2x.png" class="arrow1" /></div>
                 <div class="col-xs-10 bg-code">
                     <code>
-			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> BRAVE.<span class="blu">Nlp.Fuzzy</span>();<br/>
-nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.NumberEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"quantity"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> Bravey.<span class="blu">Nlp.Fuzzy</span>();<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> Bravey.NumberEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"quantity"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
 nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"I want 2 pizzas!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pizza"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
 console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Want 3 pizzas, please"</span><br/>&nbsp;&nbsp;).entitiesIndex.quantity.value<br/>);<br/>
   <span class="gray">// 3</span></span>
@@ -156,9 +156,9 @@ console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="
                 <div class="col-xs-1 pd-l" onclick="toBox2()"><img alt="Previous arrow" src="img/freccia_back@2x.png" class="arrow1b" /></div>
                 <div class="col-xs-10 bg-code">
                     <code>
-			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> BRAVE.<span class="blu">Nlp.Fuzzy</span>();<br/>
-nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.NumberEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"quantity"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
-nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.Language.EN.TimeEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"delivery_time"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> Bravey.<span class="blu">Nlp.Fuzzy</span>();<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> Bravey.NumberEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"quantity"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> Bravey.Language.EN.TimeEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"delivery_time"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
 nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"I want 2 pizzas at 12!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pizza"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
 console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Deliver 3 pizzas for 2pm, please"</span><br/>&nbsp;&nbsp;).entitiesIndex<br/>);<br/>
   <span class="gray">// {delivery_time:{value:"14:00:00"},quantity:{value:3}}</span></span>
@@ -179,9 +179,9 @@ console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="
                 <div class="col-xs-1 pd-l" onclick="toBox3()"><img alt="Previous arrow" src="img/freccia_back@2x.png" class="arrow1b" /></div>
                 <div class="col-xs-10 bg-code">
                     <code>
-			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> BRAVE.<span class="blu">Nlp.Fuzzy</span>();<br/>
-nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.NumberEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"quantity"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
-nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> BRAVE.Language.IT.TimeEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"delivery_time"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+			<span class="code"><span class="violet">var</span> nlp=<span class="violet">new</span> Bravey.<span class="blu">Nlp.Fuzzy</span>();<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> Bravey.NumberEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"quantity"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
+nlp.addEntity(<br/>&nbsp;&nbsp;<span class="violet">new</span> Bravey.Language.IT.TimeEntityRecognizer(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"delivery_time"</span><br/>&nbsp;&nbsp;)<br/>);<br/>
 nlp.addDocument(<br/>&nbsp;&nbsp;<span class="green">"Vorrei 2 pizze per le 3!"</span>,<br/>&nbsp;&nbsp;<span class="green">"pizza"</span>,<br/>&nbsp;&nbsp;{fromFullSentence:<span class="violet">true</span>,expandIntent:<span class="violet">true</span>}<br/>);<br/>
 console.log(<br/>&nbsp;&nbsp;nlp.test(<br/>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">"Consegnami 3 pizze per le 2 del pomeriggio!, please"</span><br/>&nbsp;&nbsp;).entitiesIndex<br/>);<br/>
   <span class="gray">// {delivery_time:{value:"14:00:00"},quantity:{value:3}}</span></span>

@@ -69,6 +69,10 @@
 	border-color:#f4f4f4;
 }
 
+.messagesay TABLE {
+	color:#000;
+}
+
 
 @media (max-width: 768px) { 
 
